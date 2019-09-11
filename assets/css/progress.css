@@ -1,0 +1,215 @@
+/* Create by py
+ */
+html {
+    font-size: 14px;
+}
+
+body {
+    font: 14px "microsoft yahei", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+.marginTop10 {
+    margin-top: 10px;
+}
+
+.marginTop5 {
+    margin-top: 5px;
+}
+
+.textAlignCenter {
+    text-align: center;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.progress-wrap {
+    width: 100%;
+}
+
+.progress-block {
+    width: 25%;
+}
+
+.progress-top {
+    padding-bottom: 10px;
+}
+
+.protop1 {
+    border-bottom: 1px solid #efc545;
+}
+
+.protop2 {
+    border-bottom: 1px solid #45a9ef;
+}
+
+.protop3 {
+    border-bottom: 1px solid #f47979;
+}
+
+.protop4 {
+    border-bottom: 1px solid #00bfd6;
+}
+
+.protop1 .pro-pic {
+    position: relative;
+    display: inline-block;
+    width: 132px;
+    height: 144px;
+    padding-top: 20px;
+    background: url(../images/progress/probg1.png) no-repeat;
+    text-align: center;
+}
+
+.protop2 .pro-pic {
+    position: relative;
+    display: inline-block;
+    width: 132px;
+    height: 144px;
+    padding-top: 20px;
+    background: url(../images/progress/probg2.png) no-repeat;
+    text-align: center;
+}
+
+.protop3 .pro-pic {
+    position: relative;
+    display: inline-block;
+    width: 132px;
+    height: 144px;
+    padding-top: 20px;
+    background: url(../images/progress/probg3.png) no-repeat;
+    text-align: center;
+}
+
+.protop4 .pro-pic {
+    position: relative;
+    display: inline-block;
+    width: 132px;
+    height: 144px;
+    padding-top: 20px;
+    background: url(../images/progress/probg4.png) no-repeat;
+    text-align: center;
+}
+
+.protop1 .pro-pic::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 4px solid #efc545;
+    background: #fff;
+    border-radius: 50%;
+    bottom: -18px;
+    left: 50%;
+    margin-left: -7px;
+}
+
+.protop2 .pro-pic::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 4px solid #45a9ef;
+    background: #fff;
+    border-radius: 50%;
+    bottom: -18px;
+    left: 50%;
+    margin-left: -7px;
+}
+
+.protop3 .pro-pic::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 4px solid #f47979;
+    background: #fff;
+    border-radius: 50%;
+    bottom: -18px;
+    left: 50%;
+    margin-left: -7px;
+}
+
+.protop4 .pro-pic::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 4px solid #00bfd6;
+    background: #fff;
+    border-radius: 50%;
+    bottom: -18px;
+    left: 50%;
+    margin-left: -7px;
+}
+
+.protop-title,
+.protop-time {
+    color: #fff;
+}
+
+.protop-time {
+    font-size: 12px;
+}
+
+.progress-bottom {
+    padding-top: 20px;
+}
+
+.progress-bottom li {
+    margin-bottom: 20px;
+}
+
+.progress-bottom li .probottom-time {
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+    color: #444444;
+}
+
+.progress-bottom li .probottom-locate {
+    color: #444444;
+}

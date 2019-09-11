@@ -1,0 +1,70 @@
+.header{
+    height: 90px;
+    border-bottom: 3px solid #0097ee;
+}
+.header .logo{
+    display: inline-block;
+    margin: 10px 0;
+}
+.topperson {
+    height: 35px;
+    margin: 27px 0;
+}
+.topperson li{
+    float: left;
+}
+.topperson li dl dt{
+    color: #555;
+    font-weight: normal;
+}
+.topperson li dl dd{
+    color: #b1b1b1;
+    font-size: 12px;
+}
+.topperson li.line{
+    background: #ddd;
+    height: 35px;
+    width: 1px;
+    margin: 0 12px;
+}
+.topperson li a.exit-a{
+    display: inline-block;
+    padding:6px 13px;
+    border: 1px solid #fb8a8a;
+    border-radius: 3px;
+    color: #fb8a8a;
+}
+.main{
+    /*height: 763px;*/
+    background: url(../../images/all-bg.png) top center;
+    padding-bottom: 20px;
+
+}
+.footer{
+    height: 135px;
+    background: #494949;
+    color: #fff;
+    padding-top: 45px;
+}
+.footer p{
+    line-height: 20px;
+}
+.main-white-bg{
+    margin-top: 13px;
+    margin-bottom: 40px;
+    background: #fff;
+    padding: 15px 30px;
+}
+.title-left{
+    font-size: 16px;
+   margin-bottom: 20px;
+}
+.title-left img{
+    margin-right: 6px;
+
+}
+.bg-gray{
+    background: #f8f8f8;
+    padding:25px 60px ;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,585 @@
+/* Create by py
+ */
+html {
+    font-size: 14px;
+}
+
+body {
+    font: 14px "microsoft yahei", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+.marginTop10 {
+    margin-top: 10px;
+}
+
+.marginTop5 {
+    margin-top: 5px;
+}
+
+.textAlignCenter {
+    text-align: center;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/* 头部步骤状态 */
+.main {
+    padding-top: 10px;
+}
+
+.el-steps {
+    display: flex;
+}
+
+.el-steps-simple {
+    padding: 6px 7%;
+    border-radius: 4px;
+    background: #eeeeee;
+}
+
+.el-step {
+    position: relative;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+}
+
+.el-step.is-simple {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-basis: 50%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.el-step__head {
+    position: relative;
+    width: 100%;
+}
+
+.el-step__head.is-success {
+    color: #67c23a;
+    border-color: #67c23a;
+}
+
+.el-step__head.is-current {
+    color: #007EE9;
+    border-color: #007EE9;
+}
+
+.el-step.is-simple .el-step__head {
+    width: auto;
+    font-size: 0;
+    padding-right: 10px;
+}
+
+
+.el-step__icon {
+    position: relative;
+    z-index: 1;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #fff;
+    -webkit-transition: .15s ease-out;
+    transition: .15s ease-out;
+}
+
+.el-step.is-simple .el-step__icon {
+    background: 0 0;
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+}
+
+.el-step__main {
+    position: relative;
+    white-space: normal;
+    text-align: left;
+}
+
+.el-step.is-simple .el-step__main {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.el-step__title {
+    font-size: 16px;
+    line-height: 38px;
+}
+
+.el-step__title.is-success {
+    color: #67c23a;
+}
+
+.el-step__title.is-current {
+    color: #007EE9;
+}
+
+.el-step.is-simple .el-step__title {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.el-step.is-simple:not(:last-of-type) .el-step__title {
+    max-width: 74%;
+    word-break: break-all;
+}
+
+.el-step.is-simple .el-step__arrow {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.el-step.is-simple .el-step__arrow::after,
+.el-step.is-simple .el-step__arrow::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    height: 34px;
+    width: 6px;
+    background: #fff;
+}
+
+.el-step.is-simple .el-step__arrow::before {
+    -webkit-transform: rotate(-48deg) translateY(-5px);
+    transform: rotate(-48deg) translateY(-5px);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.el-step.is-simple .el-step__arrow::after {
+    -webkit-transform: rotate(53deg) translateY(8px);
+    transform: rotate(53deg) translateY(8px);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+
+.con-wrap {
+    width: 1000px;
+    margin: 20px auto;
+    /* padding: 20px 2%; */
+}
+
+.stepcon {
+    display: none;
+    width: 100%;
+}
+
+.stepcon ul {
+    border: 1px solid #f2f2f2;
+}
+
+.stepcon li {
+    float: left;
+    width: 33.3%;
+}
+
+.stepcon li>span {
+    float: left;
+    border-bottom: 1px solid #f2f2f2;
+    border-right: 1px solid #f2f2f2;
+}
+
+.stepcon li>div {
+    float: left;
+}
+
+.stepcon .textlabel {
+    display: inline-table;
+    width: 36%;
+    height: 40px;
+    line-height: 40px;
+    background: #F6F6F6;
+    text-align: center;
+}
+
+.stepcon .textinfo {
+    display: inline-table;
+    width: calc(100% - 36%);
+}
+
+.stepcon .textlabel b {
+    color: red;
+    vertical-align: middle;
+}
+
+.stepcon .form-control {
+    border: 1px solid #f2f2f2;
+}
+
+.stepcon .textinfo input,
+.stepcon .textinfo select {
+    height: 42px;
+}
+
+.stepcon .textinfo select {
+    height: 42px;
+}
+
+.imginfo {
+    height: 120px;
+}
+
+.userinfo-left {
+    float: left;
+    width: 800px;
+}
+
+.userinfo-right {
+    float: right;
+    width: 200px;
+    /* padding-top: 10px; */
+    text-align: center;
+}
+
+.userinfo-right img {
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 10px;
+    background: #ccc;
+}
+
+.userinfo-right .imgupload-wrap {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 40px;
+}
+
+.userinfo-right .imgupload-wrap input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.userinfo-right .imgupload-wrap i {
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background: #007EE9;
+    font-style: normal;
+
+}
+
+.userinfo-right .imgupload-wrap i b {
+    color: red;
+    vertical-align: sub;
+}
+
+.userinfo-kuozhan .textlabel {
+    width: 55%;
+}
+
+.userinfo-kuozhan .textinfo {
+    width: calc(100% - 55%)
+}
+
+.title-left {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.circlenum {
+    display: none;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: #b3b3b3;
+    color: #fff;
+    text-align: center;
+    top: 50%;
+    margin-top: -10px;
+    left: 50%;
+    margin-left: -10px;
+}
+
+.circlenum.is-success {
+    background: #67c23a;
+}
+
+.circlenum.is-current {
+    background: #007EE9;
+}
+
+/* 头部信息展示 */
+.topinfo {
+    /* height: 30px; */
+    padding: 20px 2%;
+    border-bottom: 6px solid #eeeeee;
+}
+
+.topinfo>span {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 4px;
+}
+
+/* 个人详情 */
+.person-wrap {
+    /* width: 500px; */
+    /* margin: 100px auto; */
+    padding-top: 100px;
+    /* background: #f2f2f2; */
+}
+
+.person {
+    width: 500px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    border: 1px solid #ccc;
+    /*min-height: 500px; */
+}
+
+.person-title {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 50px;
+    padding-top: 8px;
+    background: url(../images/study-pro-title.png) no-repeat top left;
+    color: #fff;
+    font-size: 16px;
+}
+
+.person-info {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.person-info .name {
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.person-source {
+    width: 100%;
+    height: 40px;
+    padding-left: 30%;
+}
+
+.person-source i {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(../images/baseinfo-bg.png) no-repeat;
+}
+
+.btn-block {
+    width: 100%;
+    text-align: center;
+}
+
+.btn-block a {
+    display: inline-block;
+    padding: 0 20px;
+    height: 30px;
+    line-height: 30px;
+    background: #0989f6;
+    border-radius: 4px;
+    color: #fff;
+}
+
+@media screen and (max-width:1000px) {
+    .con-wrap {
+        width: 100%;
+    }
+
+    .userinfo-left {
+        float: none;
+        width: 100%;
+    }
+
+    .stepcon {
+        /* padding: 2%; */
+        padding-top: 2%;
+        background: #f6f6f6;
+    }
+
+    .userinfo-wrap {
+        background: #fff;
+    }
+
+    .stepcon li {
+        width: 100%;
+    }
+
+    .userinfo-right {
+        float: none;
+        width: 100%;
+    }
+
+    .el-step__title {
+        display: none;
+    }
+
+    .el-step.is-simple .el-step__head {
+        display: none;
+    }
+
+    .el-step.is-simple .el-step__arrow {
+        display: none;
+    }
+
+    .el-steps-simple {
+        width: 80%;
+        height: 6px;
+        margin: 20px auto;
+        padding: 0;
+        background: #b3b3b3;
+    }
+
+    .circlenum {
+        display: block;
+    }
+
+    .el-step.is-simple.is-success {
+        background: #67c23a;
+    }
+
+    .el-step.is-simple.is-current {
+        background: #007EE9;
+    }
+
+    .title-left {
+        padding-left: 2%;
+    }
+
+    .userinfo-wrap {
+        margin-top: 2px;
+    }
+
+    .stepcon ul {
+        border: none;
+    }
+
+    .stepcon li {
+        float: none;
+    }
+
+    .stepcon .textlabel,
+    .stepcon .textinfo {
+        float: none;
+        display: block;
+        width: 100%;
+    }
+
+    .stepcon .textlabel {
+        height: 20px;
+        line-height: 20px;
+        padding: 0 2%;
+        background: #fff;
+        text-align: left;
+    }
+
+    .stepcon li>span {
+        border-bottom: none;
+        border-right: none;
+    }
+
+    .stepcon .form-control {
+        height: 30px;
+        border: none;
+        border-bottom: 1px solid #f2f2f2;
+        box-shadow: none;
+    }
+
+    .stepcon .textinfo input,
+    .stepcon .textinfo select {
+        height: 30px;
+        padding: 0 8%;
+    }
+
+    .phonehide {
+        display: none;
+    }
+
+    /* 个人详情页面 */
+    .person {
+        width: 100%;
+    }
+}
