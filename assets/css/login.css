@@ -1,0 +1,358 @@
+html {
+    font-size: 14px;
+}
+
+body {
+    font: 14px "microsoft yahei", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+.marginTop10 {
+    margin-top: 10px;
+}
+
+.marginTop5 {
+    margin-top: 5px;
+}
+
+.textAlignCenter {
+    text-align: center;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.w12 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.positionRelative {
+    position: relative;
+}
+
+.login-head {
+    width: 100%;
+    height: 77px;
+}
+
+.login-head .logo {
+    width: 80%;
+    /* margin-top: 30px; */
+}
+
+.login-content {
+    width: 100%;
+    /* min-height: calc(92vh - 80px); */
+    background: url(../images/login-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.login-wrap {
+    min-height: calc(92vh - 80px);
+}
+
+.login-con {
+    position: absolute;
+    width: 32%;
+    min-height: calc(50vh - 80px);
+    /* padding-top: 2%; */
+    padding: 0 2%;
+    top: 20%;
+    right: 0;
+    background: #fff;
+}
+
+.login-con::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    min-height: 100%;
+    width: 239px;
+    background: url(../images/whiteshadow.png) no-repeat;
+    background-size: 100% 100%;
+    left: -238px;
+
+}
+
+.login-con h4 {
+    margin-top: 12%;
+    font-size: 22px;
+    color: #444;
+    font-family: "宋体";
+    font-weight: 600;
+}
+
+.login-info {
+    width: 100%;
+    padding-top: 30px;
+}
+
+.login-block {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #d2d2d2;
+    border-radius: 8px;
+}
+
+.login-icon {
+    width: auto;
+    text-align: center;
+    border-right: 1px solid #aaa;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    padding: 0 12px 0 0;
+    margin-left: 12px;
+}
+
+.login-input {
+    position: relative;
+}
+
+.login-input input {
+    width: calc(100% - 43px);
+    height: 36px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 0 8px 8px 0;
+
+}
+
+.login-input .yz {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.login-input .yz-input {
+    width: calc(100% - 123px);
+}
+
+.login-type a,
+.login-type .remember-passport {
+    color: #0285e1;
+}
+
+.login-type .remember-passport input {
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+    border: 1px solid #aaaaaa;
+    vertical-align: middle;
+    margin-top: 0;
+    background: #f2f2f2;
+}
+
+.login-btn {
+    margin-top: 30px;
+}
+
+.login-btn a {
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #0285e1;
+    color: #fff;
+    border-radius: 4px;
+}
+
+@media screen and (max-width:1440px) {
+    .w12 {
+        width: 1000px;
+    }
+
+    .login-head .logo {
+        margin-top: 0;
+    }
+
+    .login-con {
+        width: 34%;
+        min-height: calc(68vh - 80px);
+        right: 1%;
+        top: 12%;
+    }
+
+    .login-con h4 {
+        margin-top: 6%;
+    }
+}
+
+@media screen and (max-width:1366px) {
+    .w12 {
+        width: 1000px;
+    }
+
+    .login-head .logo {
+        margin-top: 0;
+    }
+
+    .login-content {
+        background-size: auto;
+    }
+
+    .login-con {
+        width: 36%;
+        right: 1%;
+        top: 12%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .login-head .logo img {
+        width: 90%;
+    }
+
+    .login-con {
+        width: 30%;
+        min-height: calc(58vh - 80px);
+        right: 1%;
+        top: 10%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .login-head .logo img {
+        width: 90%;
+    }
+
+    .login-con {
+        width: 32%;
+        right: 1%;
+        top: 19%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .w12 {
+        width: 100%;
+    }
+
+    .login-head .logo {
+        float: none !important;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .login-head .logo img {
+        width: 80%;
+
+    }
+
+    .login-content {
+        background: url(../images/login-bggg.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
+    .login-wrap {
+        padding-top: 26%;
+    }
+
+    .login-con {
+        width: 64%;
+        /* right: 8%;
+        top: 10%; */
+        min-height: calc(46vh - 80px);
+        position: initial;
+        margin: 0 auto;
+        padding-top: 8%;
+        padding-bottom: 2%;
+    }
+
+    .login-con::before {
+        background: none;
+    }
+
+    .login-con h4 {
+        margin-top: 0;
+    }
+
+    .login-info {
+        padding-top: 10px;
+    }
+
+    .login-block {
+        height: 50px;
+        line-height: 50px;
+        margin-bottom: 30px;
+    }
+
+    .login-icon {
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .login-input input {
+        height: 46px;
+
+    }
+}
+
+@media screen and (max-width:600px) {
+    .login-head {
+        margin-top: 20%;
+    }
+
+    .login-head .logo img {
+        width: 100%;
+    }
+
+    .login-content {
+        background: none;
+    }
+
+    .login-wrap {
+        padding-top: 4%;
+    }
+
+    .login-con {
+        width: 80%;
+        padding-top: 4%;
+    }
+
+    .login-info {
+        padding-top: 3%;
+    }
+}
